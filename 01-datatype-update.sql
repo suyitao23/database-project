@@ -53,4 +53,8 @@ WHERE `Age_Group` = '12--17';
 
 UPDATE `database-demo`.`vaccination_age_group`
 SET `Age_Group` = '05-11'
-WHERE `Age_Group` = '05-11';
+WHERE `Age_Group` = '05--11';
+
+UPDATE `database-demo`.`vaccination_age_group`
+SET `Age_Group` = '<5'
+WHERE `Age_Group` = 'Unknown';
